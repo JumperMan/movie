@@ -50,9 +50,6 @@
     <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
     <link href="https://maxcdn.bootstrapcdn.com/" rel="preconnect" crossorigin="">
 
-    <link href="./assets/css" rel="stylesheet">
-    <link href="./assets/css(1)" rel="stylesheet">
-
     <link href="./assets/font-awesome.min.css" rel="stylesheet">
 
     <!-- main page styles -->
@@ -64,7 +61,6 @@
   
 
     <!-- vimeo analytics -->
-    <script type="text/javascript" defer="defer" src="./assets/72160148.js"></script>
   </head>
   <body class="vuemastery-weekend-promo vuemastery-menu-fixed">
     <!-- <div id="vm-banner" class="vuemastery-banner hide" role="banner" style="display: block;">
@@ -612,28 +608,6 @@ window.addEventListener('load', function () {
     <!-- <script src="./assets/common.js"></script> -->
 
     <!-- search -->
-    <link href="./assets/docsearch.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./assets/search.css">
-    <script src="./assets/docsearch.min.js"></script>
-    <script>
-    [
-      '#search-query-nav',
-      '#search-query-sidebar',
-      '#search-query-menu'
-    ].forEach(function (selector) {
-      if (!document.querySelector(selector)) return
-      // search index defaults to v2
-      var match = window.location.pathname.match(/^\/(v\d+)/)
-      var version = match ? match[1] : 'v2'
-      docsearch({
-      appId: 'BH4D9OD16A',
-      apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
-      indexName: 'vuejs',
-      inputSelector: selector,
-      algoliaOptions: { facetFilters: ["version:" + version] },
-      autocompleteOptions: { hint: false, appendTo: 'body'}
-      })
-    })
-    </script><span class="algolia-autocomplete" style="position: absolute; z-index: 100; display: none; direction: ltr;"><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="display: block; left: 0px; right: auto;"><div class="aa-dataset-1"></div></span></span><span class="algolia-autocomplete" style="position: absolute; z-index: 100; display: none; direction: ltr;"><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-2" style="display: block; left: 0px; right: auto;"><div class="aa-dataset-3"></div></span></span>
+<span class="algolia-autocomplete" style="position: absolute; z-index: 100; display: none; direction: ltr;"><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="display: block; left: 0px; right: auto;"><div class="aa-dataset-1"></div></span></span><span class="algolia-autocomplete" style="position: absolute; z-index: 100; display: none; direction: ltr;"><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-2" style="display: block; left: 0px; right: auto;"><div class="aa-dataset-3"></div></span></span>
   <!-- <script>'use strict';'serviceWorker'in navigator&&navigator.serviceWorker.register('service-worker.js').then(function(a){a.onupdatefound=function(){var b=a.installing;b.onstatechange=function(){switch(b.state){case'installed':navigator.serviceWorker.controller?console.log('New or updated content is available.'):console.log('Content is now available offline!');break;case'redundant':console.error('The installing service worker became redundant.');}}}}).catch(function(a){console.error('Error during service worker registration:',a)}); -->
 </script></body></html>
