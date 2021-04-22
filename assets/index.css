@@ -743,7 +743,6 @@ body.docs #nav {
 #sponsors .open-collective-sponsors a,
 #sponsors .open-collective-sponsors img {
   width: auto;
-  max-width: 115px;
   max-height: 60px;
 }
 #sponsors .open-collective-sponsors h4 {
