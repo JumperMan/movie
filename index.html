@@ -96,24 +96,24 @@
     var isMenuFixed = false;
     var posMenu = 80;
 
-    var initBanner = function () {
-      // Add event listeners
-      toggleBannerEvents(true);
-      // Add class to the body to push fixed elements
-      elBody.classList.add(nameWrapper);
-      // Display the banner
-      elBanner.style.display = "block";
-      // Init close button action
-      elClose.onclick = closeBanner;
-      // Get the menu position
-      getMenuPosition();
-      // Check current page offset position
-      isMenuFixed = isUnderBanner();
-      // And position menu accordingly
-      if (isMenuFixed) {
-        elBody.classList.add("fixed");
-      }
-    }
+    // var initBanner = function () {
+    //   // Add event listeners
+    //   toggleBannerEvents(true);
+    //   // Add class to the body to push fixed elements
+    //   elBody.classList.add(nameWrapper);
+    //   // Display the banner
+    //   elBanner.style.display = "block";
+    //   // Init close button action
+    //   elClose.onclick = closeBanner;
+    //   // Get the menu position
+    //   getMenuPosition();
+    //   // Check current page offset position
+    //   isMenuFixed = isUnderBanner();
+    //   // And position menu accordingly
+    //   if (isMenuFixed) {
+    //     elBody.classList.add("fixed");
+    //   }
+    // }
 
     var closeBanner = function(e) {
       // Prevent bubbling event that redirect to vuemastery.com
@@ -129,7 +129,7 @@
     }
 
     var getMenuPosition = function() {
-      posMenu = elBanner.clientHeight;
+      // posMenu = elBanner.clientHeight;
     }
 
     var isUnderBanner = function() {
@@ -163,9 +163,9 @@
     }
 
     // Load component according to user preferences
-    if (!localStorage.getItem(nameStorage)) {
-      initBanner();
-    }
+    // if (!localStorage.getItem(nameStorage)) {
+    //   initBanner();
+    // }
   })()
 </script>
 
